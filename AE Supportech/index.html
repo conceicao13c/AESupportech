@@ -2,31 +2,34 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Opera GX">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AE SUPPORTECH</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Página inicial do meu site pessoal">
   <link rel="icon" type="image/png" href="imagens/favicon.png">
-  <!-- CSS interno -->
+
+  <!-- ===========================
+       INÍCIO DO CSS INTERNO
+       =========================== -->
   <style>
-   * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      font-family: Verdana, Tahoma, sans-serif, Helvetica, Arial, sans-serif;
+      font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
       background-color: #000000;
       color: #db9aecea;
       line-height: 1.6;
       padding: 20px;
     }
 
-    header h1 {
-      font-size: 2.8rem;
+    header h1,
+    main h2 {
       font-weight: bold;
-      background: linear-gradient(90deg, #12d393 0%, #551e64 50%, #111a1b 100%);
+      background: linear-gradient(90deg, #12d393 0%, #8e44a3 50%, #29a3b0 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -34,15 +37,12 @@
       margin-bottom: 10px;
     }
 
+    header h1 {
+      font-size: 2.8rem;
+    }
+
     main h2 {
       font-size: 2rem;
-      font-weight: bold;
-      background: linear-gradient(90deg, #12d393 0%, #551e64 50%, #111a1b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-      margin-bottom: 10px;
     }
 
     nav ul {
@@ -67,6 +67,7 @@
       background-color: #55c7f70e;
       padding: 20px 0;
       text-align: center;
+      position: relative;
     }
 
     main {
@@ -88,38 +89,42 @@
     }
 
     .logo-superior-direito {
-      position: absolute fixed;
-      top: 20px;
-      right: 20px;
-      width: 120px;
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      width: 150px;
       height: auto;
       z-index: 1000;
     }
-        .whatsapp-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        width: 60px;
-        height: 60px;
-        background-color: #72126a;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-        }
-    
-        .whatsapp-button img {
-        width: 70px;
-        height: auto;
-        }
-    </style>
-    
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #72126a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp-button img {
+      width: 40px; /* ajuste para ficar proporcional */
+      height: auto;
+    }
   </style>
+  <!-- ===========================
+       FIM DO CSS INTERNO
+       =========================== -->
 </head>
 <body>
-  
+  <!-- ===========================
+       INÍCIO DO HEADER (CABEÇALHO)
+       =========================== -->
   <header>
     <img src="imagens/Captura_de_tela_2024-11-13_224855-removebg-preview.png" alt="Logo Superior direito" class="logo-superior-direito">
     <h1>Bem-vindo!</h1>
@@ -132,7 +137,13 @@
       </ul>
     </nav>
   </header>
+  <!-- ===========================
+       FIM DO HEADER
+       =========================== -->
 
+  <!-- ===========================
+       INÍCIO DO MAIN (CONTEÚDO PRINCIPAL)
+       =========================== -->
   <main>
     <section id="sobre">
       <h2>Quem Somos</h2>
@@ -163,15 +174,40 @@
       <p>Este site é o meu primeiro projeto como desenvolvedora web. Em breve, trarei mais novidades e serviços online para facilitar sua rotina.</p>
     </section>
   </main>
+  <!-- ===========================
+       FIM DO MAIN
+       =========================== -->
 
+  <!-- ===========================
+       INÍCIO DO FOOTER (RODAPÉ)
+       =========================== -->
   <footer>
     <p>&copy; 2025 Conceição Ramos - AE Supportech</p>
   </footer>
-  <!-- Botão WhatsApp Flutuante -->
+  <!-- ===========================
+       FIM DO FOOTER
+       =========================== -->
+
+  <!-- ===========================
+       BOTÃO WHATSAPP FIXO
+       =========================== -->
   <a href="https://wa.me/11939503210" class="whatsapp-button" target="_blank" aria-label="Fale conosco no WhatsApp">
     <img src="imagens/pngtree-white-whatsapp-icon-png-png-image_3562063-removebg-preview.png" alt="WhatsApp">
   </a>
-  </body>
-  
+  <!-- ===========================
+       FIM DO BOTÃO WHATSAPP
+       =========================== -->
 
+  <!-- ===========================
+       ESPAÇO PARA JAVASCRIPT
+       =========================== -->
+  <!--
+  <script>
+    // Aqui você pode colocar seu código JavaScript
+  </script>
+  -->
+  <!-- ===========================
+       FIM DO JAVASCRIPT
+       =========================== -->
+</body>
 </html>
