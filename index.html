@@ -116,6 +116,23 @@
       width: 40px; /* ajuste para ficar proporcional */
       height: auto;
     }
+   #sobre {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+#sobre > div {
+  flex: 1 1 0;
+  max-width: 65%;
+}
+#sobre img {
+  max-width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0003;
+  flex-shrink: 0;
+}
+}
   </style>
   <!-- ===========================
        FIM DO CSS INTERNO
@@ -146,9 +163,12 @@
        =========================== -->
   <main>
     <section id="sobre">
+      <div>
       <h2>Quem Somos</h2>
       <p>A AE Supportech nasceu em outubro de 2024 com o objetivo de simplificar o suporte técnico para empresas e pessoas físicas.</p>
       <p>Oferecemos soluções práticas para quem enfrenta problemas do dia a dia com computadores, sistemas operacionais, aplicativos de escritório e muito mais.</p>
+     </div>
+     <img src="imagens/ImageS.png" alt="Equipe AE Supportech">
     </section>
 
     <section id="servicos">
