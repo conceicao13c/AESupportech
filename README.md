@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AESupportech 
 
 **Site oficial da AESupportech — Conceição Ramos**
