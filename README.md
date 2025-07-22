@@ -1,9 +1,9 @@
 
-# AESupportech 
+# AE Supportech 
 
-**Site oficial da AESupportech — Conceição Ramos**
+**Site oficial da AE Supportech — Conceição Ramos**
 
-Desde **outubro de 2024**, a AESupportech existe como uma ideia para oferecer **suporte técnico remoto e presencial** para empresas e pessoas físicas. Este repositório é **meu primeiro projeto real** com desenvolvimento web.
+Desde **outubro de 2024**, a AE Supportech existe como uma ideia para oferecer **suporte técnico remoto e presencial** para empresas e pessoas físicas. Este repositório é **meu primeiro projeto real** com desenvolvimento web.
 
 
 ## Sobre o Projeto
