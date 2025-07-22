@@ -18,7 +18,7 @@
     body {
       font-family: Verdana, Tahoma, sans-serif, Helvetica, Arial, sans-serif;
       background-color: #000000;
-      color: #cc3df4;
+      color: #db9aecea;
       line-height: 1.6;
       padding: 20px;
     }
@@ -88,7 +88,7 @@
     }
 
     .logo-superior-direito {
-      position: absolute fixed;
+      position: fixed;
       top: 20px;
       right: 20px;
       width: 120px;
@@ -101,7 +101,7 @@
         right: 20px;
         width: 60px;
         height: 60px;
-        background-color: #94178a;
+        background-color: #72126a;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -115,13 +115,13 @@
         height: auto;
         }
     </style>
-    }
+    
   </style>
 </head>
 <body>
-  <img src="imagens/Captura_de_tela_2024-11-13_224855-removebg-preview.png" alt="Logo Superior direito" class="logo-superior-direito">
-<img src="C:\Users\user\Documents\PROJETOS GITHUB\92e75545-25c7-4152-85be-e41440f55e1c.jpeg""
+  
   <header>
+    <img src="imagens/Captura_de_tela_2024-11-13_224855-removebg-preview.png" alt="Logo Superior direito" class="logo-superior-direito">
     <h1>Bem-vindo à AESupportech</h1>
     <nav> 
       <ul>
