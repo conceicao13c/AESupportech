@@ -75,7 +75,7 @@
     }
 
     .logo-superior-direito {
-      position: fixed;
+      position: absolute;
       top: 30px;
       right: 60px;
       width: 150px;
