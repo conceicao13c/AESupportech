@@ -1,103 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mozilla+Headline:wght@200..700&family=Playwrite+HU:wght@100..400&display=swap');
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: Verdana, Tahoma, Helvetica, Arial, sans-serif;
-      background-color: #000000;
-      color: #66d0deea;
-      line-height: 1.6;
-      padding: 20px;
-      font-weight: bold; /* Adicionado para negrito */
+      font-family: Arial, Tahoma, Helvetica, sans-serif; /* Fonte personalizada */
+      background-color: #000000; /* Fundo preto */
+      color: #99d1f4; /* Texto azul claro */
+      line-height: 2rem; /* Altura da linha */
+      padding: 2rem;
     }
 
-    header h1,
+    header{
+    margin-bottom: 2rem; /* Espaço abaixo do header */
+    background: #000000; /* Fundo preto */
+    padding: 4rem; /* Espaçamento interno */
+    position: relative; /* Para posicionar elementos filhos de forma absoluta */
+    font-weight: bold;
+    border-radius: 17px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px #9131b4, 0 0 15px #d44855; /* Efeito de brilho neon */
+    border: 3px solid #4332a7; /* Borda azul roxa */
+    }
+    header h1 {
+      font-size: 3.5rem; /* Tamanho bem grande */
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: bold; /* deixa o texto do parágrafo em negrito */
+      color: #9131b4; /* Cor roxa */
+      text-transform: uppercase; /* Tudo maiúsculo */
+      text-shadow: 
+        2px 2px 0 #000000,
+        4px 4px 0 #3daeff49,
+        8px 8px 0 #000000; /* Sombras para dar efeito 3D */
+    } 
     main h2 {
       font-weight: bold;
-      background-color: #8e44a3;
+      background-color: #9131b4;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       color: transparent;
       margin-bottom: 10px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-    }
-
+}
     main h2 {
       font-size: 2rem;
     }
-     header {
-      background-color: #55c7f70e;
-      padding: 20px 0;
-      text-align: center;
-      position: relative;
+    main form {
+       font-weight: bold;
     }
+   
       footer {
-      text-align: center;
-      margin-top: 40px;
-      padding: 20px 0;
-      background-color: #55c7f70e;
-      color: #8e44a3;
-    }
-    .logo-superior-direito {
-      position: absolute;
-      top: 30px;
-      right: 60px;
-      width: 150px;
-      height: auto;
-      z-index: 1000;
-    }
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      background-color: #72126a;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
-    }
+        
+        margin-bottom: 2rem;
+        padding: 2rem;
+        text-align: center;
+        border-radius: 17px;
+        box-shadow: 0 0 10px #9131b4, 0 0 15px #ff00ff;
+        border: 3px solid #4332a7;
 
-    .whatsapp-button img {
-      width: 40px;
-      height: auto;
+        /* Gradiente animado no texto */
+        background: linear-gradient(90deg, #9131b4, #ff00ff,#99d1f4, #4332a7);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        background-clip: text;
+        color: transparent;
+        animation: gradientMove 3s ease infinite; /* Animação do gradiente */
+    
+      }
+    /* Keyframes da animação de gradiente */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+footer p {
+      font-family: "playwrite hu", sans-serif; /* Fonte personalizada */
+      font-weight: bold; /* Deixa o texto do rodapé em negrito */
+      font-size: 1.2rem; /* Tamanho do texto do rodapé */
+      margin: 0; /* Remove margens */
     }
-    input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 16px 0;
-    border: 3px solid #72126a;
-    border-radius: 6px;
-    box-sizing: border-box;
-    font-size: 16px;
-    background-color:#bd99c7;
-    transition: border-color 0.3s;
+    .logo-superior-esquerdo {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  width: 150px;
+  height: auto;
+  z-index: 1000;
+}
+    /* Botão fixo do WhatsApp */
+    .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #9131b4, 0 0 15px #d44855;
+    z-index: 1000;
+
+      /* Efeito 3D usando múltiplas sombras */
+    transition: 
+    box-shadow 0.3s, 
+    border-color 0.3s, 
+    background-color 0.3s,
+    transform 0.3s;
+    cursor: pointer;
+    border: 3px solid #4332a7;
+}
+/* Responsividade (quando tela for menor que 768px) */
+@media (max-width: 768px) {
+  .logo-superior-esquerdo {
+    top: 20px;
+    right: 5px;
+    width: 90px;
+  }
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #72126a;
-    outline: none;
-    background-color:#bd99c7;
+/* Ícone dentro do botão do WhatsApp */
+    .whatsapp-button img {
+    width: 40px;
+    height: auto;
+}
+
+/* Hover no botão do WhatsApp */
+    .whatsapp-button:hover {
+    box-shadow: 0 8px 40px #9131b4, 0 0 20px #d44855;
+    border: 3px solid #99d1f4;
+    background: transparent; /* fundo transparente dentro do botão do whatsApp*/
+    transform: translateY(-10px) scale(1.03);
+}
+
+/* Animação de fundo */
+    input[type="text"],
+    input[type="email"],
+    textarea { 
+      width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px 0;
+    border: 3px solid #4332a7;
+    background-color:#000000;
+    border-radius: 17px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px #9131b4, 0 0 15px #d44855; /* Efeito de brilho neon */
+    border: 3px solid #4332a7; /* Borda azul roxa */
+}
+    .botao-container {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente (se houver altura suficiente) */
+    height: 150px; /* Exemplo: define a altura total da viewport */
 }
 
 .envio1-button {
-    background-color: #72126a;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}   
+  /* Seu CSS existente */
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #99d1f4;
+  font-weight: bold;
+  border: 3px solid #4332a7;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.envio1-button:hover {
+  box-shadow: 0 8px 40px #9131b4, 0 0 20px #d44855;
+  border: 3px solid #99d1f4;
+  background: #4332a7;
+  transform: translateY(-10px) scale(1.03);
+}
+/* Muda a cor do texto digitado para todos os campos de entrada */
+input, textarea {
+  color: #ff00ff; /* Exemplo de cor rosa neon */
+}
+
+/* Muda a cor do texto do placeholder */
+ input::placeholder, textarea::placeholder {
+  color: #a3a3a3; /* Exemplo de cor cinza claro */
+}
